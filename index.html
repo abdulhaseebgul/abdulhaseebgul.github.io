@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Haseeb Gul – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1a1a1a;
+      --accent: #00c49a;
+      --light: #f5f5f5;
+      --dark: #121212;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      filter: brightness(40%);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    nav {
+      position: fixed;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 1.5rem;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--light);
+      text-decoration: none;
+      padding: 0.2rem 0.4rem;
+      border-bottom: 2px solid transparent;
+      transition: border .3s;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      border-bottom: 2px solid var(--accent);
+    }
+
+    section {
+      padding: 4rem 8%;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    /* responsive columns */
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      }
+    }
+
+    .card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img,
+    .card video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    footer {
+      background: #000;
+      padding: 2rem 8%;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#videos">Videos</a>
+    <a href="#graphics">Graphics</a>
+    <a href="#uiux">UI/UX</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <video autoplay muted loop>
+      <source src="https://player.vimeo.com/external/332894494.sd.mp4?s=305a5381344d7f3beeec66e4740a0e9c38ade72e&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
+      <!-- stock video placeholder -->
+    </video>
+    <div>
+      <h1>Abdul Haseeb Gul</h1>
+      <p>Motion Graphics & Digital Illustration specialist with 6+ years of industry experience</p>
+    </div>
+  </header>
+
+  <!-- Videos Section -->
+  <section id="videos">
+    <h2>Videos</h2>
+    <div class="grid">
+      <!-- Replace with real works -->
+      <div class="card">
+        <video autoplay muted loop>
+          <source src="https://cdn.pixabay.com/vimeo/574546787/space-83166.mp4?width=640&hash=1edb9d19ec2df7b7dd16adcb5f8d2f5ebd7d81f4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="card">
+        <img src="https://media.giphy.com/media/3oKIPsx2VAYAgEHC12/giphy.gif" alt="Motion Graphic GIF" />
+      </div>
+      <div class="card">
+        <video autoplay muted loop>
+          <source src="https://player.vimeo.com/external/451186548.sd.mp4?s=56819794d81d1fbb50cb126af5ae0ae021f67530&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Graphics Section -->
+  <section id="graphics">
+    <h2>Graphics</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500336624523-d727130c3328?auto=format&fit=crop&w=800&q=80" alt="Digital illustration placeholder" />
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522075782725-593c3a1d148d?auto=format&fit=crop&w=800&q=80" alt="Creative graphics placeholder" />
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Illustration sample" />
+      </div>
+    </div>
+  </section>
+
+  <!-- UI/UX Section -->
+  <section id="uiux">
+    <h2>UI/UX</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1553073538-1a4b261a03fe?auto=format&fit=crop&w=800&q=80" alt="UI mockup 1" />
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="UI mockup 2" />
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519223408846-1c85872b3fbb?auto=format&fit=crop&w=800&q=80" alt="UX research" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="clients">
+    <h2>Clients</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/ffffff/000000&text=Client+Logo+1" alt="Client Logo 1" />
+      </div>
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/ffffff/000000&text=Client+Logo+2" alt="Client Logo 2" />
+      </div>
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/ffffff/000000&text=Client+Logo+3" alt="Client Logo 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;margin-bottom:1rem;">Let's collaborate on your next big idea.</p>
+    <p style="text-align:center;">
+      <a href="mailto:haseebgul.design@gmail.com" style="color:var(--accent);font-weight:600;">haseebgul.design@gmail.com</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <p>
+      <a href="https://www.linkedin.com/in/example" target="_blank" rel="noopener">LinkedIn</a> |
+      <a href="https://dribbble.com/example" target="_blank" rel="noopener">Dribbble</a> |
+      <a href="https://behance.net/example" target="_blank" rel="noopener">Behance</a>
+    </p>
+    <small>&copy; 2025 Abdul Haseeb Gul. All Rights Reserved.</small>
+  </footer>
+</body>
+</html>
